@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script>
+        function formddatasubmit(){
+            var Name = document.getElementById("Name").value;
+            var Eamil = document.getElementById("Email").value;
+            var Subject = document.getElementById("Subject").value;
+            var Message = document.getElementById("Message").value;
+            var btnsubmit = document.getElementById("btnsubmit");
+            if((Name !== "") &&(Eamil !== "") &&(Subject !== "") &&(Message !== "")){
+                btnsubmit.style.display="block";
+            }
+
+        }
+        
+    </script>
+</head>
+<body>
+    <header class="bg-dark">
+        <button class="btn btn-dark bi-justify" data-bs-toggle="offcanvas" data-bs-target="#navbar"></button>
+        <div class="offcanvas offcanvas-start bg-dark text-light" id="navbar">
+            <div class="offcanvas-header">
+                <button class="btn bi-arrow-left-circle fs-3 text-light-emphasis" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div style="height: 200px;" class="d-flex align-items-center justify-content-center">
+                <h2 class="text-center" style="color: rgb(35, 209, 192);">Vishnu Patel</h2>
+            </div>
+            <div class="offcanvas-body">
+                <div class="text-center mb-4"><button class="bi-house btn btn-outline-info"  data-bs-dismiss="offcanvas"><a href="#Home">Home</a></button> </div>
+                <div class="text-center mb-4"><button class="bi-person btn btn-outline-info"  data-bs-dismiss="offcanvas"><a href="#About">About</a></button> </div>
+                <div class="text-center mb-4"><button class="bi-boxes btn btn-outline-info"  data-bs-dismiss="offcanvas"><a href="#Service">Service</a></button> </div>
+                <div class="text-center mb-4"><button class="bi-code-slash btn btn-outline-info"  data-bs-dismiss="offcanvas"><a href="#Project">Project</a></button></div>
+                <div class="text-center mb-4"><button class="bi-phonebtn btn btn-outline-info"  data-bs-dismiss="offcanvas"><a href="#Contect">Contect</a></button></div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="header">
+            <div style="height: 200px;color: white;font-weight: bold;font-size: 25px;" class="d-flex justify-content-center align-items-center">
+                Vishnu Patel
+            </div>
+            <div class="">
+                <div class="text-center mb-4"><button class="bi-house btn btn-outline-info"><a href="#Home">Home</a></button> </div>
+                <div class="text-center mb-4"><button class="bi-person btn btn-outline-info"><a href="#About">About</a></button> </div>
+                <div class="text-center mb-4"><button class="bi-boxes btn btn-outline-info"><a href="#Service">Service</a></button> </div>
+                <div class="text-center mb-4"><button class="bi-code-slash btn btn-outline-info"><a href="#Project">Project</a></button></div>
+                <div class="text-center mb-4"><button class="bi-phonebtn btn btn-outline-info"><a href="#Contect">Contect</a></button></div>
+            </div>
+        </div>
+        <div class="main  bg-dark text-white">
+            <div id="Home" class="Home">
+                        <div class="pe-2 d-lg-flex flex-column justify-content-center align-items-center fs-2 text-light fw-medium text-opacity-75 AboutHome1">
+                            <div>
+                                Hello, my name is <span class="text-info">Vishnu Patel</span>
+                            </div>
+                            <div>
+                                I'm a <span class="text-info">Web Developer</span>
+                            </div>
+                        </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <div><img src="./portfolio/pic-5.png" style="height: 400px; width: 300px;"></div>
+                </div>
+                <div class="AboutHome">
+                    <div class="pe-2 d-flex flex-column justify-content-center align-items-center fs-1 text-light fw-medium text-opacity-75">
+                        <div>
+                            Hello, my name is <span class="text-info">Vishnu Patel</span>
+                        </div>
+                        <div>
+                            I'm a <span class="text-info">Web Developer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="About px-5 py-2" id="About">
+                <div class="title h2 text-info mb-3 text-decoration-underline">
+                    About Me
+                </div>
+                <div class="sub-title fs-4 fw-medium mb-1">
+                    I'm a Vishnu Patel and <span class="text-info">MERN Stack Developer</span>
+                </div>
+                <div class="text-opacity-50 text-white mb-5">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis harum nulla, similique amet nihil ipsum consequatur voluptate! Sunt sint libero culpa harum aut pariatur quos. Vel saepe nam facilis optio!
+                </div>
+                <div class="text-info fw-medium text-decoration-underline fs-3">Skills</div>
+                <div class="Details mt-3">
+                    <div class="font  mb-sm-5">
+                        <div>
+                            <div class="fw-bold pb-2 text-info fs-3">Frontend technologies</div>
+                            <div>
+                                <div>Html5</div>
+                                <div class="progress" style="width: 100%;">
+                                    <div class="progress bg-info progress-bar-striped progress-bar-animated text-end" style="width: 85%;">
+                                    </div><span class="text-info ps-2 fw-bold">85%</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div>Css , bootstrap</div>
+                                <div class="progress" style="width: 100%;">
+                                    <div class="progress bg-info progress-bar-striped progress-bar-animated text-end" style="width: 80%;">
+                                    </div><span class="text-info ps-2 fw-bold">80%</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div>Javascript</div>
+                                <div class="progress" style="width: 100%;">
+                                    <div class="progress bg-info progress-bar-striped progress-bar-animated text-end" style="width: 90%;">
+                                    </div><span class="text-info ps-2 fw-bold">90%</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div>React.js</div>
+                                <div class="progress" style="width: 100%;">
+                                    <div class="progress bg-info progress-bar-striped progress-bar-animated text-end" style="width: 85%;">
+                                    </div><span class="text-info ps-2 fw-bold">85%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div></div>
+                    <div class="back ">
+                        <div>
+                            <div class="fw-bold pb-lg-2 text-info fs-3">Backend technologies</div>
+                            <div>
+                                <div>Node.Js</div>
+                                <div class="progress" style="width: 100%;">
+                                    <div class="progress bg-info progress-bar-striped progress-bar-animated text-end" style="width: 85%;">
+                                    </div><span class="text-info ps-2 fw-bold">85%</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div>Express.js</div>
+                                <div class="progress" style="width: 100%;">
+                                    <div class="progress bg-info progress-bar-striped progress-bar-animated text-end" style="width: 80%;">
+                                    </div><span class="text-info ps-2 fw-bold">80%</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div>Mongodb</div>
+                                <div class="progress" style="width: 100%;">
+                                    <div class="progress bg-info progress-bar-striped progress-bar-animated text-end" style="width: 80%;">
+                                    </div><span class="text-info ps-2 fw-bold">80%</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div>Javascript</div>
+                                <div class="progress" style="width: 100%;">
+                                    <div class="progress bg-info progress-bar-striped progress-bar-animated text-end" style="width: 90%;">
+                                    </div><span class="text-info ps-2 fw-bold">90%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="Eduction b-4" style="height: 200px;">
+                    <div>
+                        <div class="border border-1 border-danger-subtle p-2 mt-5 rounded-2">
+                            <div class="text-light fs-4">
+                                BJR GOVT Degree College, Hyderabad.
+                            </div>
+                            <div class="text-light">
+                                Baschelor in Computer's  <span class="text-white-50"> 7.9 CGPA</span>
+                            </div>
+                        </div>
+                        <div class="border border-1 border-danger-subtle p-2 mt-5 rounded-2">
+                            <div class="text-light fs-4">
+                                BJR GOVT Degree College, Hyderabad.
+                            </div>
+                            <div class="text-light">
+                                Baschelor in Computer's  <span class="text-white-50"> 7.9 CGPA</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-lg-flex justify-content-around flex-column position-relative align-items-center" >
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="addmargin">
+                        <div class="border border-1 border-danger-subtle p-2 rounded-2">
+                            <div class="text-light fs-4">
+                                BJR GOVT Degree College, Hyderabad.
+                            </div>
+                            <div class="text-light">
+                                Baschelor in Computer's  <span class="text-white-50"> 7.9 CGPA</span>
+                            </div>
+                        </div>
+                        <div class="border border-1 border-danger-subtle p-2 rounded-2 mt-5">
+                            <div class="text-light fs-4">
+                                BJR GOVT Degree College, Hyderabad.
+                            </div>
+                            <div class="text-light">
+                                Baschelor in Computer's  <span class="text-white-50"> 7.9 CGPA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="Service p-5" id="Service">
+                <div class="h2 text-info text-decoration-underline mb-5">
+                    Service
+                </div>
+                <div class="">
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-1 pe-4">
+                            <div class="cards p-4 m-3">
+                                <div class="h-25 d-flex justify-content-center align-items-center"><span class="bi-laptop fs-1 text-info"></span></div>
+                                <div>
+                                    <div class="fw-medium fs-5 mt-5">Web Developement</div>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis minus libero quibusdam dolor dolores sapiente.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-1 pe-4">
+                            <div class="cards p-4 m-3">
+                                <div class="h-25 d-flex justify-content-center align-items-center"><span class="bi-globe fs-1 text-info"></span></div>
+                                <div>
+                                    <div class="fw-medium fs-5 mt-5">SEO Frendily</div>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis minus libero quibusdam dolor dolores sapiente.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-1 pe-4">
+                            <div class="cards p-4 m-3">
+                                <div class="h-25 d-flex justify-content-center align-items-center"><span class="bi-phone-flip fs-1 text-info"></span></div>
+                                <div>
+                                    <div class="fw-medium fs-5 mt-5">Responsive</div>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis minus libero quibusdam dolor dolores sapiente.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="Project p-4" id="Project">
+                <div class="h2 text-info text-decoration-underline p-4">
+                    Project
+                </div>
+                <div class="porjectrow mb-3">
+                    <div class="py-3">
+                        <div class="proj-card text-center">
+                            <a class="animation" href="https://vishnupatel45.github.io/Academia/">
+                                <img src="./portfolio/academia.png" width="250px" height="250px" style="border-radius: 15px;" >
+                                <button class="btn btn-outline-info position-relative p-1">Academia</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="py-3">
+                        <div class="proj-card text-center">
+                            <a class="animation" href="https://vishnupatel45.github.io/Spotify/">
+                                <img src="./portfolio/spotify1.png" width="250px" height="250px" style="border-radius: 15px;" >
+                                <button class="btn btn-outline-info position-relative p-1">spotify</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="py-3">
+                        <div class="proj-card text-center">
+                            <a class="animation"  href="https://vishnupatel45.github.io/Math-Calculater/">
+                                <img src="./portfolio/fakesotre.png" width="250px" height="250px" style="border-radius: 15px;" >
+                                <button class="btn btn-outline-info position-relative p-1">Calculater</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="porjectrow">
+                    <div class="py-3">
+                        <div class="proj-card text-center">
+                            <a class="animation" href="https://vishnupatel45.github.io/Meni-Word-office-/">
+                                <img src="./portfolio/Textediter.png" width="250px" height="250px" style="border-radius: 15px;" >
+                                <button class="btn btn-outline-info position-relative p-1">Textediter</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="py-3">
+                        <div class="proj-card text-center">
+                            <a class="animation" href="https://vishnupatel45.github.io/Academia/">
+                                <img src="./portfolio//weather.png" width="250px" height="250px" style="border-radius: 15px;" >
+                                <button class="btn btn-outline-info position-relative p-1">Weather api</button>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <hr>
+            <div class="Contect p-4" id="Contect">
+                <div class="h2 text-info text-decoration-underline p-4">
+                    Contect
+                </div>
+                <div class="text-center fw-medium fs-5 text-info">
+                    Have You Any Question ?
+                </div>
+                <div class="text-center fw-medium">
+                    I'm At Your Service
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 text-center p-3">
+                        <div class="bi-telephone-fill text-info fs-2"></div>
+                        <div class="fw-medium">Call Us On</div>
+                        <div>+91 8688571181</div>
+                    </div>
+                    <div  class="col-lg-4 text-center p-3">
+                        <div class="bi-geo-alt-fill text-info"></div>
+                        <div>Location</div>
+                        <div>Ameerpet, Hyderabad</div>
+                    </div>
+                    <div  class="col-lg-4 text-center p-3">
+                        <div class="bi-envelope-fill text-info"></div>
+                        <div>Email</div>
+                        <div>patelvishnu4518@gmail.com</div>
+                    </div>
+                </div>
+                <div class="text-center fs-4 fw-medium text-info">
+                    SEND ME AN EMAIL
+                </div>
+                <div class="text-center fw-medium">
+                    I'M VERY RESPONSIVE TO MESSAGES
+                </div>
+                <div onmousemove="formddatasubmit()">
+                   <div class="input-group m-2 ps-2 pe-3">
+                    <input type="text" class="form-control bg-transparent text-info rounded-3 me-2 " id="Name" name="Name" required  placeholder="Name">
+                    <input type="text" class="form-control bg-transparent text-info rounded-3 " id="Email" name="Email" placeholder="Eamil" required>
+                   </div>
+                   <div class="m-2 ps-2 pe-2">
+                    <input type="text" name="subject" class="form-control text-info rounded-3 bg-transparent " id="Subject" placeholder="Subject" required>
+                   </div>
+                   <div class="m-2 ps-2 pe-2">
+                    <textarea name="Message" class="form-control rounded-4 text-info bg-transparent " id="Message" placeholder="Your Message" cols="30" rows="10"></textarea required>
+                   </div>
+                   <button class="btn btn-outline-info" style="display: none;" id="btnsubmit" data-bs-target="#formsubmit" data-bs-toggle="modal" ><span class="bi-send-fill pe-2"></span>Send</button>
+                </div>
+                <div id="modals">
+                    <div class="modal fade" id="formsubmit">
+                        <div class="modal-dialog" id="modals">
+                            <div class="modal-content text-dark p-3">
+                                <div class="modal-header">
+                                    <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body d-flex flex-column align-items-center">
+                                    <img src="./portfolio/done-gif.gif" width="300px">
+                                </div>
+                                <div class="fw-medium fs-3">
+                                    Your Message is sended
+                                </div>
+                                <div class="fw-medium">
+                                    Have a Nice Day! ❤️
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

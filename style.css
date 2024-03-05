@@ -1,0 +1,144 @@
+
+header{
+    display: none;
+}
+section{
+    display: grid;
+    grid-template-columns: 3.5fr 8.5fr;
+}
+.header, .main{
+    height: 100vh;
+}
+.header{
+    background-color: black;
+}
+.Home{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+}
+.main{
+   overflow: auto;
+}
+.Details, .Eduction{
+    display: grid;
+    grid-template-columns: 5.8fr 0.2fr 6fr;
+}
+.circle{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color:  rgba(189, 69, 107, 0.5);
+}
+.line{
+    height: 195px;
+    position: absolute;
+    width: 1px;
+    background: rgba(189, 69, 107, 0.5);
+}
+.cards{
+    height: 300px;
+    width: 250px;
+    box-shadow: 0px 0px 5px aqua;
+    border-radius: 20px;
+}
+.cards:hover{
+    transform: scale(1.02);
+}
+.Service, .Project, .Contect{
+    height: 100vh;
+}
+.About{
+    height: 110vh;
+}
+.proj-card{
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+}
+.animation{
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+    background-color: transparent;
+}
+.porjectrow{
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+}
+.AboutHome{
+    display: none;
+}
+.AboutHome1{
+    display: block;
+}
+#Name::placeholder, #Email::placeholder, #Subject::placeholder, #Message::placeholder{
+    color: aqua;
+}
+
+a{
+    color: aqua !important;
+    text-decoration: none !important;
+    
+}
+@keyframes motion {
+    0%{
+        height: 200px;
+        width: 250px;
+        background:linear-gradient(rgb(246, 247, 247), rgb(220, 255, 255),rgb(113, 255, 255),rgb(25, 248, 248));
+    }
+    100%{
+        height: 250px;
+        width: 250px;
+        background:linear-gradient(rgb(246, 247, 247), rgb(220, 255, 255),rgb(113, 255, 255),rgb(25, 248, 248));
+
+    }
+
+
+}
+.services{
+    height: 80vh;
+}
+@media screen and (orientation:portrait){
+    header{
+        display: block;
+    }
+    .header{
+        display: none;
+    }
+    section, .Home, .Details, .Eduction{
+        display: grid;
+        grid-template-columns: 12fr;
+    }
+    .About{
+        height: 1500px;
+    }
+    .Project{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 1800px;
+    }
+    .circle{
+        display: none;
+    }
+    .addmargin{
+        margin-top: 35px;
+    }
+    .Service{
+        height: 1200px;
+        padding-top: 70px;
+    }
+    .porjectrow{
+        display: grid;
+        grid-template-columns: 12fr;
+    }
+    .AboutHome{
+        display: block;
+    }
+    .AboutHome1{
+        display: none;
+    }
+
+}
