@@ -75,26 +75,14 @@ section{
 #Name::placeholder, #Email::placeholder, #Subject::placeholder, #Message::placeholder{
     color: aqua;
 }
+#btnsubmit{
+    display: none;
+}
 
 a{
     color: aqua !important;
     text-decoration: none !important;
     
-}
-@keyframes motion {
-    0%{
-        height: 200px;
-        width: 250px;
-        background:linear-gradient(rgb(246, 247, 247), rgb(220, 255, 255),rgb(113, 255, 255),rgb(25, 248, 248));
-    }
-    100%{
-        height: 250px;
-        width: 250px;
-        background:linear-gradient(rgb(246, 247, 247), rgb(220, 255, 255),rgb(113, 255, 255),rgb(25, 248, 248));
-
-    }
-
-
 }
 .services{
     height: 80vh;
@@ -136,9 +124,17 @@ a{
     }
     .AboutHome{
         display: block;
+        font-size: 30px;
+        font-weight:lighter
     }
     .AboutHome1{
         display: none;
     }
-
+    #btnsubmit{
+        display: block;
+    }
+    #personalimg{
+        height: 500px;
+        width: 400px;
+    }
 }
