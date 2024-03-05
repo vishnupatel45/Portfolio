@@ -87,6 +87,10 @@ a{
 .services{
     height: 80vh;
 }
+.projimg{
+    width: 250px;
+    height: 250px;
+}
 @media screen and (orientation:portrait){
     header{
         display: block;
@@ -121,6 +125,7 @@ a{
     .porjectrow{
         display: grid;
         grid-template-columns: 12fr;
+        margin-right: 25%;
     }
     .AboutHome{
         display: block;
@@ -136,5 +141,9 @@ a{
     #personalimg{
         height: 500px;
         width: 400px;
+    }
+    .projimg{
+        width: 350px;
+        height: 250px;
     }
 }
