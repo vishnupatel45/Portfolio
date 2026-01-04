@@ -27,7 +27,7 @@ const Projects = () => {
     {
       id: 3,
       title: 'NTAR Bizz - Fintech Application',
-      description: 'A comprehensive fintech application with financial management, transaction processing, user dashboard, and payment integration. Full-stack MERN application featuring expenses tracking, invoice management, utility bill payments, POS device integration, inventory management, and customer management systems.',
+      description: 'A comprehensive fintech application with financial management, transaction processing, user dashboard, and payment integration. Full-stack MERN application featuring expenses tracking, invoice management, utility bill payments, inventory management, and customer management systems.',
       technologies: ['React', 'Node.js', 'MongoDB', 'Express.js', 'REST API'],
       image: '/projectimg/Ntar.png',
       github: 'https://github.com/vishnupatel45',
@@ -36,7 +36,7 @@ const Projects = () => {
     {
       id: 4,
       title: 'Admin Full Application for NTAR Bizz',
-      description: 'Complete admin panel application for NTAR Bizz with comprehensive dashboard featuring KPIs (Total Users, Orders, Sales, Pending), analytics, user management, vendor management, payment processing, and detailed reporting systems. Full-stack implementation with both frontend and backend.',
+      description: 'Complete admin panel application for NTAR Bizz with comprehensive dashboard featuring APIs (Total Users, WalletTxn, BBPSTxn, CardTxn), analytics, user management, vendor management, payment processing, and detailed reporting systems. Full-stack implementation with both frontend and backend. with TanentID DBConnection',
       technologies: ['React', 'Node.js', 'MongoDB', 'Express.js', 'Admin Panel'],
       image: '/projectimg/Ntaradmin.png',
       github: 'https://github.com/vishnupatel45',
@@ -44,8 +44,8 @@ const Projects = () => {
     },
     {
       id: 5,
-      title: 'API Service Provider - B2B Project',
-      description: 'A B2B API service provider platform with comprehensive API management, documentation, integration features, and business-to-business service delivery. Currently working on this project to enable seamless API integration for enterprise clients.',
+      title: 'FLOWPIPE - B2B Project',
+      description: 'A B2B FLOWPIPE: Api Module service provider platform with comprehensive API management, documentation, integration features, and business-to-business service delivery. Currently working on this project to enable seamless API integration for enterprise clients.',
       technologies: ['React', 'Node.js', 'REST API', 'MongoDB', 'Express.js'],
       image: 'https://via.placeholder.com/400x250/1a1a1a/ffffff?text=API+Service+B2B',
       github: 'https://github.com/vishnupatel45',

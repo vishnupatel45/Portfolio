@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { FaGithub, FaLinkedin, FaEnvelope, FaDownload } from 'react-icons/fa'
+import resume from '../assets/Vishnupatel_Resume.pdf'
 import './Hero.css'
 
 const Hero = () => {
@@ -61,7 +62,7 @@ const Hero = () => {
             <a href="#contact" className="btn btn-primary">
               Get In Touch
             </a>
-            <a href="/resume.pdf" className="btn btn-secondary" download>
+            <a href={resume} className="btn btn-secondary" download="Vishnupatel_Resume.pdf">
               <FaDownload /> Download Resume
             </a>
           </div>
@@ -69,10 +70,10 @@ const Hero = () => {
             <a href="https://github.com/vishnupatel45" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
               <FaGithub />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <a href="https://linkedin.com/in/vishnupatel45" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <FaLinkedin />
             </a>
-            <a href="mailto:patelvishnu4518@gmail.com" aria-label="Email">
+            <a href="mailto:vishnudotdev@gmail.com" aria-label="Email">
               <FaEnvelope />
             </a>
           </div>

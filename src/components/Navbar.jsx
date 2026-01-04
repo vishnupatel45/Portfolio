@@ -26,7 +26,7 @@ const Navbar = ({ activeSection }) => {
     <nav className="navbar">
       <div className="nav-container">
         <div className="nav-logo" onClick={() => scrollToSection('home')}>
-          Portfolio
+          Vishnu patel
         </div>
         <div className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
           {navItems.map((item) => (

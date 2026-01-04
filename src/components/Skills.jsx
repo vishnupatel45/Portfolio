@@ -8,7 +8,7 @@ const Skills = () => {
       title: 'Frontend Technologies',
       skills: [
         { name: 'HTML5', icon: <FaHtml5 />, level: 'Expert' },
-        { name: 'CSS, Bootstrap', icon: <SiBootstrap />, level: 'Advanced' },
+        { name: 'CSS, Bootstrap, Tailwind', icon: <SiBootstrap />, level: 'Advanced' },
         { name: 'JavaScript', icon: <FaJs />, level: 'Expert' },
         { name: 'React.js', icon: <FaReact />, level: 'Expert' },
       ],
